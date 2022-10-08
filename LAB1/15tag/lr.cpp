@@ -11,11 +11,11 @@ int main() {
     s1.vivod();
     s1=s1-s2;
     s1.vivod();
-    // s1=s1*s2;
-    // s1.vivod();
+    s1=s1*s2;
+    s1.vivod();
     s1=s1/s2;
     s1.vivod();
-    Complex s3(0, 0);
-    s1=s1/s3;
+ //   Complex s3(0, 0);
+ //   s1=s1/s3;
 }
 

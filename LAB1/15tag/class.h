@@ -1,5 +1,5 @@
 #pragma once
-
+#include <math.h>
 #include <iostream>
 
 class Complex {
@@ -14,7 +14,7 @@ class Complex {
         return temp;
     }
     Complex operator/(const Complex &a) {
-        if (a.re == 0 && a.im == 0) {
+        if ((a.re * a.re + a.im * a.im) < abs(0.00001)) {
             std::cout << "Redemption on zero division\n";
             return *this;
         }
